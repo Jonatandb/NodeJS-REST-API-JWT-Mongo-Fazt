@@ -4,7 +4,9 @@
   "description": "Este es un ejemplo práctico de Nodejs y MongoDB en el que crearemos una REST API que hace un CRUD de productos, permite autenticar a usuarios y establecer roles para la autorizacion de rutas en el servidor.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec npx babel-node src/index.js"
+    "start": "node build/index.js",
+    "dev": "nodemon --exec npx babel-node src/index.js",
+    "build": "babel src --out-dir build"
   },
   "keywords": [],
   "author": "",
