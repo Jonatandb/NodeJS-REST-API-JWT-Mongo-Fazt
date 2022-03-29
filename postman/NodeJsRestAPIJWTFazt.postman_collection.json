@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "e174645f-3204-4e54-80d4-76aea3ad9838",
+		"name": "NodeJsRestAPIJWTFazt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "getProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"monitor samsung\",\r\n    \"category\": \"monitors\",\r\n    \"price\": 999,\r\n    \"imageURL\": \"https://img.clasf.com.ar/2018/12/31/Monitor-LCD-Samsung-CM22WS-20181231165852.7022290015.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
