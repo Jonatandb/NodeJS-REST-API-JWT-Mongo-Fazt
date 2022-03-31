@@ -1,0 +1,39 @@
+##############################################################
+### Requests ("REST Client" extension for VSCode Required) ###
+##############################################################
+
+@PORT = {{$dotenv PORT}}
+
+### /
+GET http://localhost:{{PORT}}/
+
+### Get all
+GET http://localhost:{{PORT}}/products
+
+### Get by ID
+GET http://localhost:{{PORT}}/products/624289d9bb05da01130ee432
+
+### Post
+POST http://localhost:{{PORT}}/products
+content-type: application/json
+
+{
+    "name": "teclado logitech",
+    "category": "teclados",
+    "price": 123,
+    "imgURL": "https://img.clasf.com.ar/2018/12/31/Monitor-LCD-Samsung-CM22WS-20181231165852.7022290015.jpg"
+}
+
+### Put
+PUT http://localhost:{{PORT}}/products/6244f5475ac8bd4f2c4d479d
+content-type: application/json
+
+{
+    "name": "monitor samsung actualizado!!",
+    "category": "monitors",
+    "price": 1234,
+    "imgURL": "https://img.clasf.com.ar/2018/12/31/Monitor-LCD-Samsung-CM22WS-20181231165852.7022290015.jpg"
+}
+
+### Delete
+DELETE  http://localhost:{{PORT}}/products/624285277b60f964d6fdbdc5

@@ -14,11 +14,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/products",
+							"raw": "localhost:{{PORT}}/products",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{PORT}}",
 							"path": [
 								"products"
 							]
@@ -32,14 +32,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/products/624285773e363cf7d5d7c4c1",
+							"raw": "localhost:{{PORT}}/products/6244f23fb6a83543a944bc26",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{PORT}}",
 							"path": [
 								"products",
-								"624285773e363cf7d5d7c4c1"
+								"6244f23fb6a83543a944bc26"
 							]
 						}
 					},
@@ -58,14 +58,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"monitor samsung\",\r\n    \"category\": \"monitors\",\r\n    \"price\": 999,\r\n    \"imageURL\": \"https://img.clasf.com.ar/2018/12/31/Monitor-LCD-Samsung-CM22WS-20181231165852.7022290015.jpg\"\r\n}"
+							"raw": "{\r\n    \"name\": \"mouse hp 30\",\r\n    \"category\": \"mouses\",\r\n    \"price\": 11,\r\n    \"imgURL\": \"https://img.clasf.com.ar/2018/12/31/Monitor-LCD-Samsung-CM22WS-20181231165852.7022290015.jpg\"\r\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/products",
+							"raw": "localhost:{{PORT}}/products",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{PORT}}",
 							"path": [
 								"products"
 							]
@@ -86,17 +86,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n        \"name\": \"teclado hp\",\r\n        \"category\": \"teclados\",\r\n        \"price\": 122\r\n    }"
+							"raw": " {\r\n        \"name\": \"teclado hp 2\",\r\n        \"category\": \"teclados\",\r\n        \"price\": 122\r\n    }"
 						},
 						"url": {
-							"raw": "localhost:3000/products/624285377b60f964d6fdbdc7",
+							"raw": "localhost:{{PORT}}/products/6244fad161adce2b31638a3a",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{PORT}}",
 							"path": [
 								"products",
-								"624285377b60f964d6fdbdc7"
+								"6244fad161adce2b31638a3a"
 							]
 						}
 					},
@@ -108,20 +108,47 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/products/624285773e363cf7d5d7c4c1",
+							"raw": "localhost:{{PORT}}/products/6244fad161adce2b31638a3a",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "{{PORT}}",
 							"path": [
 								"products",
-								"624285773e363cf7d5d7c4c1"
+								"6244fad161adce2b31638a3a"
 							]
 						}
 					},
 					"response": []
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "PORT",
+			"value": "4000",
+			"type": "default"
 		}
 	]
 }
