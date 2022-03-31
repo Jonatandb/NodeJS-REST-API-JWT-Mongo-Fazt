@@ -2,7 +2,7 @@
   "name": "nodejs-rest-api-jwt-mongo-fazt",
   "version": "1.0.0",
   "description": "Este es un ejemplo práctico de Nodejs y MongoDB en el que se crea una REST API que hace CRUD de productos, permite autenticar a usuarios y establecer roles para la autorizacion de rutas en el servidor.",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "node build/index.js",
     "dev": "nodemon --exec npx babel-node src/index.js",
@@ -43,3 +43,4 @@
     "nodemon": "^2.0.15"
   }
 }
+
